@@ -1,0 +1,28 @@
+#mainContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+td{
+    text-align: center;
+}
+th{
+    cursor: pointer;
+}
+th.sorted[data-order="-1"]::after {
+    content: "▼"
+}
+
+th.sorted[data-order="1"]::after {
+    content: "▲"
+}
+.th_name{
+    color: blue;
+}
+
+.th_price{
+    color:red;
+}
+button{
+    margin-top:5px;
+}
